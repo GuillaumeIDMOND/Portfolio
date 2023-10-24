@@ -1,13 +1,125 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root,
+.app{
+  height: 100%;
+  background-color: #010026;
+  @apply text-white;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+img.rounded-circle {
+    max-width: 500px;
+    max-height:500px;
+    border-radius: 50%;
+  }
+
+/* SMALL SCREEN */
+
+img.rounded-circle-mobile {
+    max-width: 250px;
+    max-height:250px;
+    border-radius: 50%;
+  }
+
+  .rounded-top {
+    border-radius: 20px 20px 0px 0;
+  }
+
+  .rounded-top-left {
+    border-radius: 20px 0 0 20px;
+  }
+
+  /* INFO BULLE GitHub */
+  .tooltip {
+    position: relative;
+  }
+  
+  .tooltip::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 80%;
+    left: -10%;
+    transform: translateX(-100%);
+    background: linear-gradient(to right, #3490dc, #e3342f);
+    color: black;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    opacity: 0; 
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    white-space: nowrap;
+    -webkit-text-stroke: 1px white; /* Contour blanc autour du texte (pour Chrome) */
+    -moz-text-stroke: 1px white; /* Contour blanc autour du texte (pour Firefox) */
+    text-stroke: 1px white; /* Contour blanc autour du texte (pour navigateurs récents) */
+  }
+  
+  .tooltip:hover::before {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* INFO BULLE lien */
+  .tooltip2 {
+    position: relative;
+  }
+  
+  .tooltip2::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 80%;
+    left: -10%;
+    transform: translateX(-100%);
+    background: linear-gradient(to right, orange, green);
+    color: black;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    opacity: 0; 
+    visibility: hidden;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    white-space: nowrap;
+    -webkit-text-stroke: 1px white; /* Contour blanc autour du texte (pour Chrome) */
+    -moz-text-stroke: 1px white; /* Contour blanc autour du texte (pour Firefox) */
+    text-stroke: 1px white; /* Contour blanc autour du texte (pour navigateurs récents) */
+  }
+  
+  .tooltip2:hover::before {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .gradientLogo {
+    background: linear-gradient(81.66deg, #0030ee 7.21%, #FF45A4 45.05%, #FFBA00 78.07%);
+  -webkit-background-clip: text; /* Applique le dégradé au texte (pour Chrome) */
+  background-clip: text; /* Applique le dégradé au texte (pour navigateurs récents) */
+  color: transparent; /* Rend le texte transparent pour que le dégradé soit visible */
+
+  }
+
+  .icon-size {
+    width: 51px;
+    height: 51px;
+  }
+
+  .gradient-box {
+    max-width: 400px;
+    max-height: 400px;
+    background: linear-gradient(135deg, #0030ee 7.21%, #FF45A4 45.05%, #FFBA00 78.07%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 2em;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+  }
