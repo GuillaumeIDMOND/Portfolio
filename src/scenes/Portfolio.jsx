@@ -79,7 +79,7 @@ const Portfolio = () => {
               <div className="absolute right-4 bottom-4 flex gap-2">
                 <a
                   className="hover:opacity-50 transtion duration-500 tooltip"
-                  href="https://github.com/"
+                  href="https://github.com/GuillaumeIDMOND/Portfolio"
                   target="_blank"
                   rel="noreferrer"
                   data-tooltip="GitHub du projet"
@@ -88,7 +88,7 @@ const Portfolio = () => {
                 </a>
                 <a
                   className="hover:opacity-50 transtion duration-500 tooltip2"
-                  href="https://github.com/"
+                  href="https://portfolio-guillaume-idmond.web.app/"
                   target="_blank"
                   rel="noreferrer"
                   data-tooltip="Lien vers le projet"

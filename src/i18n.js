@@ -22,7 +22,7 @@ i18n
             menu: {
                 test: 'Bonjour Monde',
                 home: 'Accueil',
-                skills: 'Skills',
+                skills: 'Compétences',
                 portfolio: 'Portfolio',
                 contact: 'Contact',
                 
@@ -39,7 +39,7 @@ i18n
               study: "Etudes",
               mystudy: "Mes études",
               skills: "Compétences",
-              myskills: "Mes compétences",
+              myskills: "Hard skills",
               2003: "Employé agricole",
               2004: "Menuisier",
               2005: "Intérimaire et stagiaire en maintenance informatique",
