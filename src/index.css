@@ -56,9 +56,9 @@ img.rounded-circle-mobile {
     visibility: hidden;
     transition: opacity 0.2s ease, visibility 0.2s ease;
     white-space: nowrap;
-    -webkit-text-stroke: 1px white; /* Contour blanc autour du texte (pour Chrome) */
-    -moz-text-stroke: 1px white; /* Contour blanc autour du texte (pour Firefox) */
-    text-stroke: 1px white; /* Contour blanc autour du texte (pour navigateurs récents) */
+    -webkit-text-stroke: 1px white;
+    -moz-text-stroke: 1px white; 
+    text-stroke: 1px white;
   }
   
   .tooltip:hover::before {
@@ -85,9 +85,9 @@ img.rounded-circle-mobile {
     visibility: hidden;
     transition: opacity 0.2s ease, visibility 0.2s ease;
     white-space: nowrap;
-    -webkit-text-stroke: 1px white; /* Contour blanc autour du texte (pour Chrome) */
-    -moz-text-stroke: 1px white; /* Contour blanc autour du texte (pour Firefox) */
-    text-stroke: 1px white; /* Contour blanc autour du texte (pour navigateurs récents) */
+    -webkit-text-stroke: 1px white;
+    -moz-text-stroke: 1px white;
+    text-stroke: 1px white;
   }
   
   .tooltip2:hover::before {
@@ -97,9 +97,9 @@ img.rounded-circle-mobile {
 
   .gradientLogo {
     background: linear-gradient(81.66deg, #0030ee 7.21%, #FF45A4 45.05%, #FFBA00 78.07%);
-  -webkit-background-clip: text; /* Applique le dégradé au texte (pour Chrome) */
-  background-clip: text; /* Applique le dégradé au texte (pour navigateurs récents) */
-  color: transparent; /* Rend le texte transparent pour que le dégradé soit visible */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 
   }
 

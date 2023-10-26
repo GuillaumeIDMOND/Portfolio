@@ -3,8 +3,8 @@ import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
 import { AiFillGithub } from "react-icons/ai";
 import { TbWorldWww } from "react-icons/tb";
-import appMeteo from "../assets/portfolio.jpg";
-import projet3 from "../assets/meteo.jpg";
+import portfolio from "../assets/portfolio.jpg";
+import appMeteo from "../assets/meteo.jpg";
 import projet4 from "../assets/ecommerce.jpg";
 import projet6 from "../assets/mobione.jpeg";
 
@@ -97,7 +97,7 @@ const Portfolio = () => {
                 </a>
               </div>
             </div>
-            <img src={appMeteo} className="max-w-[400px] max-h-[400px]" alt="projet1" />
+            <img src={portfolio} className="max-w-[400px] max-h-[400px]" alt="projet1" />
           </motion.div>
           {/* Yellow Square */}
           <div
@@ -107,31 +107,33 @@ const Portfolio = () => {
           </div>
 
           {/* ROW 2 */}
-          {/* Projet 3 */}
+          {/* Projet 2 */}
           <motion.div variants={projectVariant} className="relative">
             <div className={overlayStyles}>
             <p className="text-2xl font-playfair">AppMétéOo</p>
               <p className="mt-7">Projet réalisé lors de la formation DWWM. Le sujet était la découverte et l'utilistation d'Api. Cette app est construite en JavaScript natif et fonctionne grâce à l'Api d'OpenWeather.</p>
               <div className="absolute right-4 bottom-4 flex gap-2">
                 <a
-                  className="hover:opacity-50 transtion duration-500"
-                  href="https://github.com/"
+                  className="hover:opacity-50 transtion duration-500 tooltip"
+                  href="https://github.com/GuillaumeIDMOND/app-meteo"
                   target="_blank"
                   rel="noreferrer"
+                  data-tooltip="GitHub du projet"
                 >
                   <AiFillGithub className="w-[31px] h-[31px]" />
                 </a>
                 <a
-                  className="hover:opacity-50 transtion duration-500"
-                  href="https://github.com/"
+                  className="hover:opacity-50 transtion duration-500 tooltip2"
+                  href="https://appmeteoo.web.app/"
                   target="_blank"
                   rel="noreferrer"
+                  data-tooltip="Lien vers le projet"
                 >
                   <TbWorldWww className="w-[31px] h-[31px]" />
                 </a>
               </div>
             </div>
-            <img src={projet3} alt="projet3" />
+            <img src={appMeteo} alt="projet3" />
           </motion.div>
           {/* Gradient Square */}
           <div
@@ -140,12 +142,12 @@ const Portfolio = () => {
           >
           </div>
 
-          {/* Projet 4 */}
+          {/* Projet 3 */}
           <motion.div variants={projectVariant} className="relative">
             <div className={overlayStyles}>
               <p className="text-2xl font-playfair">E-Commerce</p>
               <p className="mt-7">Site de e-commerce, en cours de réalisation...</p>
-              <div className="absolute right-4 bottom-4 flex gap-2">
+              {/* <div className="absolute right-4 bottom-4 flex gap-2">
                 <a
                   className="hover:opacity-50 transtion duration-500"
                   href="https://github.com/"
@@ -162,7 +164,7 @@ const Portfolio = () => {
                 >
                   <TbWorldWww className="w-[31px] h-[31px]" />
                 </a>
-              </div>
+              </div> */}
             </div>
             <img src={projet4} alt="projet4" />
           </motion.div>
@@ -174,12 +176,12 @@ const Portfolio = () => {
             className="flex justify-center text-center items-center p-10 bg-purple
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
           >  </div>
-          {/* Projet 6 */}
+          {/* Projet 4 */}
           <motion.div variants={projectVariant} className="relative">
             <div className={overlayStyles}>
               <p className="text-2xl font-playfair">MobiOneApp</p>
-              <p className="mt-7">Une application back-office de gestion des stocks et conception et gestion de rapports d'intervention réalisée durant la période de stage de DWWM.</p>
-              <div className="absolute right-4 bottom-4 flex gap-2">
+              <p className="mt-7">Une application back-office de gestion des stocks et conception et gestion de rapports d'intervention réalisée durant la période de stage de DWWM. En cours de réalisation...</p>
+              {/* <div className="absolute right-4 bottom-4 flex gap-2">
                 <a
                   className="hover:opacity-50 transtion duration-500"
                   href="https://github.com/"
@@ -196,7 +198,7 @@ const Portfolio = () => {
                 >
                   <TbWorldWww className="w-[31px] h-[31px]" />
                 </a>
-              </div>
+              </div> */}
             </div>
             <img src={projet6} alt="projet6" />
           </motion.div>
